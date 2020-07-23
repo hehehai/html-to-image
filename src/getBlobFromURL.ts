@@ -48,9 +48,6 @@ export default function getBlobFromURL(
         .fetch(url, {
           method: 'GET',
           mode: 'cors',
-          cache: 'no-cache',
-          credentials: 'same-origin',
-          headers: { 'Content-Type': 'application/json' },
         })
         .then(response => response.blob())
         .then(
