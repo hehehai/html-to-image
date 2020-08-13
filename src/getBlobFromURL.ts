@@ -64,7 +64,7 @@ export default function getBlobFromURL(
         )
         .then(getDataURLContent)
         .catch(
-          (err) =>
+          err =>
             new Promise((resolve, reject) => {
               reject(err)
             }),
